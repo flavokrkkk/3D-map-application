@@ -5,8 +5,8 @@ import MapWidget from "@widgets/mapWidget/ui/mapWidget"
 import { useEffect, useState } from "react"
 
 const ObjectPage = () => {
-  const { filterGeoObjects } = useAppSelector(objectSelector)
-  const { getAllObjects, getStatusObject } = useActions()
+  const { filterGeoObjects, layersObject } = useAppSelector(objectSelector)
+  const { getAllObjects, getStatusObject, getLayers } = useActions()
   const [selectedLayer, setSelectedLayer] = useState<string>("Выбрать слой")
   const [selectedMapType, setSelectedMapType] = useState<boolean>(false)
 
@@ -23,6 +23,7 @@ const ObjectPage = () => {
 
   useEffect(() => {
     getStatusObject()
+    getLayers()
   }, [])
 
   return (
@@ -30,6 +31,7 @@ const ObjectPage = () => {
       <MapWidget
         geoObjects={filterGeoObjects}
         selectedLayer={selectedLayer}
+        layersObject={layersObject}
         handleChange={handleChange}
         handleChangeMapType={handleChangeMapType}
       />

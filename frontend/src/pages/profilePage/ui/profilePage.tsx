@@ -1,4 +1,4 @@
-import { Avatar, Collapse, Input, Typography } from "antd"
+import { Avatar, Collapse, Input, Spin, Typography } from "antd"
 import { EditOutlined, StarOutlined } from "@ant-design/icons"
 import { useEffect } from "react"
 import { useActions } from "@shared/hooks/useActions"
@@ -16,6 +16,14 @@ const ProfilePage = () => {
   useEffect(() => {
     getSavedObjects()
   }, [])
+
+  if (!savedObjects.features.length) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <Spin size="large" />
+      </div>
+    )
+  }
   return (
     <div className="flex space-x-6 p-4">
       <div className="w-1/4">
@@ -29,13 +37,13 @@ const ProfilePage = () => {
             color: "#fff"
           }}
         />
-        <div className="space-y-2">
-          <div className="flex flex-col justify-center items-center">
+        <div className="space-y-2 ">
+          <div className="flex flex-col ">
             <Text strong>Параметры профиля</Text>
             <Text>Избранные коммуникации</Text>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col ">
             {savedObjects.features.map(item => (
               <div key={item.id} className="cursor-pointer text-blue-600">
                 {item.properties.name}

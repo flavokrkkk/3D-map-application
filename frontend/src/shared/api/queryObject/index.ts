@@ -1,4 +1,4 @@
-import { IGeoObject, IGeoObjectStatus } from "@entities/objects"
+import { IGeoObject, IGeoObjectLayers, IGeoObjectStatus } from "@entities/objects"
 import { axiosWithAuth } from "../baseQuery"
 import { AxiosResponse } from "axios"
 import { IUpdateRequestBody } from "./types"
@@ -17,5 +17,7 @@ export const objectQuery = {
     axiosWithAuth.get(url),
   savedObject: (url: string, requestParam: { body: IGeoObject; geoObjectId: number }) =>
     axiosWithAuth.post(`${url}?geo_object_id=${requestParam.geoObjectId}`, requestParam.body),
-  getObject: (url: string): Promise<AxiosResponse<Array<IGeoObject>>> => axiosWithAuth.get(url)
+  getObject: (url: string): Promise<AxiosResponse<Array<IGeoObject>>> => axiosWithAuth.get(url),
+  getLayers: (url: string): Promise<AxiosResponse<Array<IGeoObjectLayers>>> =>
+    axiosWithAuth.get(url)
 }

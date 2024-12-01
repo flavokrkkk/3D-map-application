@@ -110,6 +110,12 @@ const DetailObjectCard: FC<IDetailObjectCard> = ({ object }) => {
       </div>
       <div>
         <section className="flex items-center space-x-2">
+          <h1 className="font-medium">Метериал</h1>
+        </section>
+        <p className="leading-3 text-xs">{object.properties.material}</p>
+      </div>
+      <div>
+        <section className="flex items-center space-x-2">
           <h1 className="font-medium">Статус</h1>
           <span className="mt-[2px] cursor-pointer" onClick={handleChangeStatusEdit}>
             <PenIcon />
