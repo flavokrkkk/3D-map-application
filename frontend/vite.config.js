@@ -11,9 +11,6 @@ export default defineConfig({
     target: "esnext",
     platform: "node"
   },
-  build: {
-    outDir: "dist"
-  },
   plugins: [react(), cesium()],
   resolve: {
     alias: {
