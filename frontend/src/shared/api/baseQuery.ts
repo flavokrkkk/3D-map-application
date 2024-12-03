@@ -9,8 +9,8 @@ export const baseQueryInstance: CreateAxiosDefaults = {
   headers: {
     ["Content-Type"]: "application/json",
     ["Accept"]: "application/json",
-    ["Access-Control-Allow-Origin"]: "https://1d66-77-238-226-4.ngrok-free.app",
-    ["Access-Control-Allow-Credentials"]: "true"
+    ["Access-Control-Allow-Origin"]: "https://map-app-whgm.vercel.app",
+    ["Access-Control-Allow-Credentials"]: true
   }
 }
 
