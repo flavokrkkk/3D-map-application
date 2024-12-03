@@ -28,7 +28,7 @@ PROTECTED = Depends(get_current_user_dependency)
 
 
 origins = [
-    "https://localhost:5173",
+    "http://localhost:5173",
     "https://map-app-whgm-ptlw1xjzx-flavokrkkks-projects.vercel.app",
     "https://map-app-whgm.vercel.app",
     "https://map-app-nine-wine.vercel.app/"
