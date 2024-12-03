@@ -51,7 +51,7 @@ services:
       - db
     restart: always
     networks:
-      - app-network  # Добавлено
+      - app-network 
 
   frontend:
     build:
