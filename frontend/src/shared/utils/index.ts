@@ -1,5 +1,5 @@
 export const enum EBaseUrls {
-  BASE_URL = "http://185.246.118.204:8000/"
+  BASE_URL = "https://1d66-77-238-226-4.ngrok-free.app"
 }
 
 export enum ECoordinates {

@@ -43,5 +43,17 @@ class UpdateGeoObjectModel(BaseModel):
     global_layers: list[int] | None = None
 
 
-class AddGeoObject(GeoObjectModel):
-    pass
+class MaterialCountModel(BaseModel):
+    name: str
+    count: int
+    
+
+class GeoObjectStatistics(BaseModel):
+    underground_count: int
+    aboveground_count: int
+    avg_depth_aboveground: float | None = None 
+    avg_depth_underground: float | None = None
+    materials_count: list[MaterialCountModel]
+    active_status_count: int
+    inactive_status_count: int
+

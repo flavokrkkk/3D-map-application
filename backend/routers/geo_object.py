@@ -36,4 +36,13 @@ async def update_geo_object(
 ):
     await layer_service.check_layers_exist(form.global_layers)
     await status_service.check_status_exist(form.status)
-    return await geo_object_service.update_object(user_id, object_id, form)
+    return await geo_object_service.update_object(object_id, form)
+
+
+@router.get('/statistic')
+async def get_statistc(
+    geo_object_service: Annotated[
+        GeoObjectService, Depends(get_geo_object_service)
+    ],   
+):
+    return await geo_object_service.get_statistic()
