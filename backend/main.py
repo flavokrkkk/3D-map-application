@@ -1,4 +1,5 @@
 import asyncio
+import logging
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from fastapi import FastAPI, Depends, Request
@@ -11,6 +12,7 @@ import backend.routers as routers
 from backend.database.connection.connection import DatabaseConnection
 from backend.utils.config.config import load_database_config
 from backend.utils.dependencies.dependencies import get_current_user_dependency, get_session
+logging.basicConfig(level=logging.INFO)
 
 
 async def lifespan(app: FastAPI):

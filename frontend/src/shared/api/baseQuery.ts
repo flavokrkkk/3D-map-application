@@ -7,7 +7,10 @@ export const baseQueryInstance: CreateAxiosDefaults = {
   baseURL: EBaseUrls.BASE_URL,
   withCredentials: true,
   headers: {
-    ["Content-Type"]: "application/json"
+    ["Content-Type"]: "application/json",
+    ["Accept"]: "application/json",
+    ["Access-Control-Allow-Origin"]: "https://1d66-77-238-226-4.ngrok-free.app",
+    ["Access-Control-Allow-Credentials"]: "true"
   }
 }
 
