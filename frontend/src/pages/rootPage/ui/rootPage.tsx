@@ -27,9 +27,9 @@ const RootPage = () => {
             <Link to={ERoutesNames.PROFILE_PAGE} key="1" className="cursor-pointer">
               <UserIcon />
             </Link>
-            <div key="2" className="text-sm cursor-pointer">
+            <Link to={"/statistic"} key="2" className="text-sm cursor-pointer">
               Главная
-            </div>
+            </Link>
             <Link to={ERoutesNames.OBJECTS_PAGE} key="3" className="text-sm cursor-pointer">
               Карта
             </Link>

@@ -10,6 +10,7 @@ const AuthPage = lazy(() => import("@pages/authPage"))
 const RegisterPage = lazy(() => import("@pages/authPage/ui/registerPage/ui"))
 const LoginPage = lazy(() => import("@pages/authPage/ui/loginPage/ui"))
 const ProfilePage = lazy(() => import("@pages/profilePage"))
+const MainPage = lazy(() => import("@pages/mainPage"))
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
         {
           path: ERoutesNames.OBJECTS_PAGE,
           element: <ObjectPage />
+        },
+        {
+          path: "/statistic",
+          element: <MainPage />
         },
         {
           path: ERoutesNames.OBJECTS_DETAILS_PAGE,
