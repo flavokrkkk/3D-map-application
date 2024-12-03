@@ -27,3 +27,7 @@ export interface IGeoObjectStatus {
   id: number
   name: string
 }
+export interface IGeoObjectLayers {
+  id: number
+  name: string
+}

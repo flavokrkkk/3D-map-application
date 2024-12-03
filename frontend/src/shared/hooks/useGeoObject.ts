@@ -1,6 +1,6 @@
-import { RefObject, useCallback, useEffect, useState } from "react"
 import { IGeoObject } from "@entities/objects"
 import * as Cesium from "cesium"
+import { RefObject, useCallback, useEffect, useState } from "react"
 import { EActiveWatches } from "../utils"
 
 export const useGeoObject = (viewerRef: RefObject<Cesium.Viewer>) => {
@@ -13,70 +13,70 @@ export const useGeoObject = (viewerRef: RefObject<Cesium.Viewer>) => {
       try {
         const entities = dataSource.entities.values
 
-        //кластеризация объектов, убрать на время
-        // if (dataSource.clustering) {
-        //   dataSource.clustering.enabled = true
-        //   dataSource.clustering.pixelRange = 15
-        //   dataSource.clustering.minimumClusterSize = 2
-        // }
-
         entities.forEach(entity => {
           const type: IGeoObject["type"] = entity.properties?.type?.getValue() || "unknown"
           const status: string = entity.properties?.status?.getValue() || "unknown"
 
-          if (entity.polyline) {
-            if (watches === EActiveWatches.WATCHES_LINE) {
-              entity.polyline.material = new Cesium.ColorMaterialProperty(Cesium.Color.AQUA)
-              entity.polyline.width = new Cesium.ConstantProperty(6)
-            } else {
-              entity.polyline.material = new Cesium.ColorMaterialProperty(Cesium.Color.TRANSPARENT)
-              entity.polyline.width = new Cesium.ConstantProperty(0)
-            }
-          }
-
           const positions = entity.polyline?.positions?.getValue(Cesium.JulianDate.now())
-          const midpoint = positions?.[0] || entity.position?.getValue(Cesium.JulianDate.now())
 
-          if (midpoint) {
-            if (watches === EActiveWatches.WATHES_ICON) {
-              entity.billboard = new Cesium.BillboardGraphics({
-                image: "/locateIcon.svg",
-                scale: 0.6,
-                verticalOrigin: Cesium.VerticalOrigin.BOTTOM
-              })
-            } else {
-              entity.billboard = undefined
-            }
-            entity.label = new Cesium.LabelGraphics({
-              text: `Тип: ${type}\nСтатус: ${status}`,
-              font: "14pt sans-serif",
-              fillColor: Cesium.Color.WHITE,
-              outlineColor: Cesium.Color.BLACK,
-              outlineWidth: 2,
-              pixelOffset: new Cesium.Cartesian2(0, -50),
-              verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-              scale: 0.8,
-              show: false
+          if (positions) {
+            entity.polyline = undefined
+
+            entity.polylineVolume = new Cesium.PolylineVolumeGraphics({
+              positions: positions,
+              shape: [...Array(64).keys()].map(i => {
+                const angle = (i / 64) * 2 * Math.PI
+                return new Cesium.Cartesian2(Math.cos(angle) * 1.5, Math.sin(angle) * 1.5)
+              }),
+              material: new Cesium.ColorMaterialProperty(Cesium.Color.AQUA),
+              cornerType: Cesium.CornerType.ROUNDED
             })
 
-            entity.position = midpoint
-          }
-          const updateLabelVisibility = () => {
-            const cameraPosition = viewer.camera.positionWC
-            const entityPosition = entity.position?.getValue(Cesium.JulianDate.now())
+            const midpoint = positions?.[0] || entity.position?.getValue(Cesium.JulianDate.now())
 
-            if (!entityPosition) return
+            if (midpoint) {
+              if (watches === EActiveWatches.WATHES_ICON) {
+                entity.billboard = new Cesium.BillboardGraphics({
+                  image: "/locateIcon.svg",
+                  scale: 0.6,
+                  verticalOrigin: Cesium.VerticalOrigin.BOTTOM
+                })
+              } else {
+                entity.billboard = undefined
+              }
 
-            const distance = Cesium.Cartesian3.distance(cameraPosition, entityPosition)
+              entity.label = new Cesium.LabelGraphics({
+                text: `Тип: ${type}\nСтатус: ${status}`,
+                font: "14pt sans-serif",
+                fillColor: Cesium.Color.WHITE,
+                outlineColor: Cesium.Color.BLACK,
+                outlineWidth: 2,
+                pixelOffset: new Cesium.Cartesian2(0, -50),
+                verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+                scale: 0.8,
+                show: false
+              })
 
-            const labelVisibilityDistance = 500
-
-            if (entity.label) {
-              entity.label.show = new Cesium.ConstantProperty(distance < labelVisibilityDistance)
+              entity.position = midpoint
             }
-          }
 
-          viewer.scene.camera.changed.addEventListener(updateLabelVisibility)
+            const updateLabelVisibility = () => {
+              const cameraPosition = viewer.camera.positionWC
+              const entityPosition = entity.position?.getValue(Cesium.JulianDate.now())
+
+              if (!entityPosition) return
+
+              const distance = Cesium.Cartesian3.distance(cameraPosition, entityPosition)
+
+              const labelVisibilityDistance = 500
+
+              if (entity.label) {
+                entity.label.show = new Cesium.ConstantProperty(distance < labelVisibilityDistance)
+              }
+            }
+
+            viewer.scene.camera.changed.addEventListener(updateLabelVisibility)
+          }
         })
 
         const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas)
@@ -89,7 +89,7 @@ export const useGeoObject = (viewerRef: RefObject<Cesium.Viewer>) => {
             document.body.style.cursor = "default"
           }
         }, Cesium.ScreenSpaceEventType.MOUSE_MOVE)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
         viewer.screenSpaceEventHandler.setInputAction((movement: any) => {
           const pickedObject = viewer.scene.pick(movement.position)
           if (Cesium.defined(pickedObject) && Cesium.defined(pickedObject.id)) {

@@ -1,29 +1,30 @@
-import { ChangeEvent, FC, useEffect, useRef, useState, useCallback, memo } from "react"
-import { Viewer, GeoJsonDataSource } from "resium"
-import { Viewer as CesiumViewer } from "cesium"
-import { IGeoWrapper, objectSelector } from "@entities/objects"
-import { Button, Dropdown, InputNumberProps, Modal, Segmented, Select } from "antd"
+import { IGeoObjectLayers, IGeoWrapper, objectSelector } from "@entities/objects"
+import DetailObjectInfo from "@entities/objects/ui/detailObjectInfo/detailObjectInfo"
+import ObjectFilterMenu from "@entities/objects/ui/objectFilterMenu/objectFilterMenu"
+import ArrowIcon from "@shared/assets/social/arrowIcon"
+import { useActions } from "@shared/hooks/useActions"
+import { useAppSelector } from "@shared/hooks/useAppSelector"
 import { useGeoObject } from "@shared/hooks/useGeoObject"
 import { useMapRender } from "@shared/hooks/useMapRender"
-import Search from "antd/es/input/Search"
-import ObjectFilterMenu from "@entities/objects/ui/objectFilterMenu/objectFilterMenu"
-import { useActions } from "@shared/hooks/useActions"
-import { valueType } from "antd/es/statistic/utils"
-import ArrowIcon from "@shared/assets/social/arrowIcon"
-import DetailObjectInfo from "@entities/objects/ui/detailObjectInfo/detailObjectInfo"
-import { layerOptions } from "@shared/mocks/layers"
 import { EActiveWatches } from "@shared/utils"
 import { EMapTypes } from "@shared/utils/filterType"
-import { useAppSelector } from "@shared/hooks/useAppSelector"
+import { Button, Dropdown, InputNumberProps, Modal, Segmented, Select } from "antd"
+import Search from "antd/es/input/Search"
+import { DefaultOptionType } from "antd/es/select"
+import { valueType } from "antd/es/statistic/utils"
+import { Viewer as CesiumViewer } from "cesium"
+import { ChangeEvent, FC, memo, useCallback, useEffect, useMemo, useRef, useState } from "react"
+import { GeoJsonDataSource, Viewer } from "resium"
 
 interface IMapWidget {
   geoObjects: IGeoWrapper
   selectedLayer: string
+  layersObject: Array<IGeoObjectLayers>
   handleChange: (value: string) => void
   handleChangeMapType: (value: boolean) => void
 }
 const MapWidget: FC<IMapWidget> = memo(
-  ({ geoObjects, handleChange, selectedLayer, handleChangeMapType }) => {
+  ({ geoObjects, handleChange, selectedLayer, handleChangeMapType, layersObject }) => {
     const viewerRef = useRef<CesiumViewer | null>(null)
     const [values, setValues] = useState("")
     const [dropdownVisible, setDropdownVisible] = useState(false)
@@ -112,6 +113,16 @@ const MapWidget: FC<IMapWidget> = memo(
 
     const handleMapClick = () => setDropdownVisible(false)
 
+    const layesrOptions = useMemo(() => {
+      return [
+        ...layersObject.reduce((acc, item) => {
+          acc.push({ value: item.name, label: item.name })
+          return acc
+        }, [] as Array<DefaultOptionType>),
+        { label: "Выбрать все", value: "Выбрать все" }
+      ]
+    }, [layersObject])
+
     useMapRender(viewerRef)
     useEffect(() => {
       setManyFilterObjects({ ...statusFilters, filters: filters, depth: inputValue })
@@ -169,7 +180,7 @@ const MapWidget: FC<IMapWidget> = memo(
               value={selectedLayer}
               className="w-[280px]"
               onChange={handleChange}
-              options={layerOptions}
+              options={layesrOptions}
               defaultValue={"Выбрать слой"}
             />
             <Search

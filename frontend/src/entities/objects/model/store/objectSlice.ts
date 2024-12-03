@@ -1,8 +1,8 @@
-import { asyncThunkCreator, buildCreateSlice, PayloadAction } from "@reduxjs/toolkit"
-import { IObjectsState } from "./types"
-import { IGeoObject } from "../types"
-import { objectQuery } from "@shared/api/queryObject"
 import { IUpdateRequestBody } from "@/shared/api/queryObject/types"
+import { asyncThunkCreator, buildCreateSlice, PayloadAction } from "@reduxjs/toolkit"
+import { objectQuery } from "@shared/api/queryObject"
+import { IGeoObject } from "../types"
+import { IObjectsState } from "./types"
 
 const createSliceWithThunks = buildCreateSlice({
   creators: { asyncThunk: asyncThunkCreator }
@@ -15,6 +15,7 @@ const initialState: IObjectsState = {
   savedObjects: { type: "", features: [] },
   filterGeoObjects: { type: "", features: [] },
   statusObject: [],
+  layersObject: [],
   error: ""
 }
 
@@ -132,6 +133,7 @@ export const objectSlice = createSliceWithThunks({
           const searchObject = state.geoObjects.features.findIndex(feat => feat.id === payload.id)
           if (searchObject !== -1) {
             state.geoObjects.features[searchObject] = payload
+            state.filterGeoObjects.features[searchObject] = payload
           }
           state.isLoading = false
         },
@@ -164,7 +166,6 @@ export const objectSlice = createSliceWithThunks({
         }
       }
     ),
-
     setSavedObjects: create.asyncThunk(
       async (requestParam: { body: IGeoObject; geoObjectId: number }, { rejectWithValue }) => {
         try {
@@ -183,6 +184,7 @@ export const objectSlice = createSliceWithThunks({
           const searchObject = state.geoObjects.features.findIndex(feat => feat.id === payload.id)
           if (searchObject !== -1) {
             state.geoObjects.features[searchObject] = { ...payload, is_saved: true }
+            state.filterGeoObjects.features[searchObject] = { ...payload, is_saved: true }
           }
           state.isLoading = false
         },
@@ -213,6 +215,29 @@ export const objectSlice = createSliceWithThunks({
         },
         rejected: state => {
           state.error = "Invalid request!"
+        }
+      }
+    ),
+    getLayers: create.asyncThunk(
+      async (_, { rejectWithValue }) => {
+        try {
+          const { data } = await objectQuery.getLayers("/api/layer/")
+          return data
+        } catch (err) {
+          return rejectWithValue(`${err}`)
+        }
+      },
+      {
+        pending: state => {
+          state.isLoading = true
+        },
+        fulfilled: (state, { payload }) => {
+          state.layersObject = payload
+          state.isLoading = false
+        },
+        rejected: state => {
+          state.error = "Invalid request!"
+          state.isLoading = false
         }
       }
     )

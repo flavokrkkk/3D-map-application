@@ -1,3 +1,5 @@
+version: '3.0'
+
 services:
   db:
     image: postgres:15
@@ -13,14 +15,16 @@ services:
       interval: 5s
       timeout: 3s
       retries: 5
+    networks:
+      - app-network  # Добавлено
 
   nginx:
     image: nginx:latest
     container_name: nginx-proxy
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf 
+      - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
-      - "80:80"
+      - "8080:80"
     depends_on:
       - app
     networks:
@@ -47,14 +51,15 @@ services:
       - db
     restart: always
     networks:
-      - app-network
-      - dev
+      - app-network  # Добавлено
 
   frontend:
     build:
       context: ./frontend
     networks:
       - dev
+    ports:
+    - "5173:5173"  
 
 networks:
   app-network:

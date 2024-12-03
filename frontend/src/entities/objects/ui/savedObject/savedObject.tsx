@@ -1,6 +1,7 @@
+import StarIcon from "@shared/assets/panel/starIcon"
+import { message } from "antd"
 import { FC } from "react"
 import { IGeoObject } from "../../model"
-import StarIcon from "@shared/assets/panel/starIcon"
 
 interface ISavedObject {
   object: IGeoObject
@@ -9,6 +10,7 @@ interface ISavedObject {
 const SavedObject: FC<ISavedObject> = ({ object, setSavedObjects }) => {
   const handleSavedObject = () => {
     setSavedObjects({ body: object, geoObjectId: object.id })
+    message.info("Вы сохранили локацию!")
   }
 
   return (

@@ -1,10 +1,9 @@
-import InfoIcon from "@shared/assets/social/infoIcon"
 import CheckIcon from "@shared/assets/social/checkIcon"
 import CloseIcon from "@shared/assets/social/closeIcon"
-import { Card } from "antd"
-import { Descriptions, Divider, Space, Statistic, Typography } from "antd"
-import { IGeoObject } from "../../model"
+import InfoIcon from "@shared/assets/social/infoIcon"
+import { Card, Descriptions, Divider, Space, Statistic, Typography } from "antd"
 import { FC } from "react"
+import { IGeoObject } from "../../model"
 
 const { Title, Text } = Typography
 
@@ -54,14 +53,12 @@ const DetailObjectInfo: FC<IDetailObjectInfo> = ({ selectedObject }) => {
                 <Descriptions.Item label="Глубина (м)" span={3}>
                   <Statistic value={selectedObject.properties.depth} suffix="м" />
                 </Descriptions.Item>
+                <Descriptions.Item label="Материал" span={3}>
+                  <Text>{selectedObject.properties.material}</Text>
+                </Descriptions.Item>
               </Descriptions>
             </div>
           </Card>
-          {/* <img
-            src={selectedObject.image}
-            alt="Object Cover"
-            style={{ width: "100%", height: "auto" }}
-          /> */}
           <Space direction="vertical" size="middle" style={{ width: "100%" }}>
             {selectedObject.properties.status === "Активный" ? (
               <Space size="middle" style={{ color: "green" }}>
@@ -79,7 +76,6 @@ const DetailObjectInfo: FC<IDetailObjectInfo> = ({ selectedObject }) => {
               </Space>
             )}
           </Space>
-
           <Divider />
           <Space direction="vertical" size="middle" style={{ width: "100%" }}>
             <Title level={5}>Дополнительная информация</Title>
