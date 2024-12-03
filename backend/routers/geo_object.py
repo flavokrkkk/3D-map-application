@@ -38,6 +38,7 @@ async def update_geo_object(
     return await geo_object_service.update_object(object_id, form)
 
 
+@router.get('/statistic')
 async def get_statistc(
     geo_object_service: Annotated[
         GeoObjectService, Depends(get_geo_object_service)
