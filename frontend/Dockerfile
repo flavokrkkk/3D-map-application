@@ -10,10 +10,11 @@ RUN npm install
 
 # Copy all files and build the app
 COPY . .
-RUN npm run build
+RUN npm run dev
 
 # Serve the built files using Nginx
 FROM nginx:alpine
+
 
 # Copy the build output to Nginx's public folder
 COPY --from=build /app/dist /usr/share/nginx/html
