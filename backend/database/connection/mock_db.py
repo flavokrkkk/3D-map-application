@@ -38,11 +38,11 @@ async def create_test_db(session: AsyncSession):
         test_json = file.read()
         test_jsons = jsn.loads(test_json)
 
-    for json in test_jsons:
+    for index, json in enumerate(test_jsons):
         json["global_layers"] = [layers[json["properties"]["type"]]]
         json["properties"]["depth"] = (
             ~json["properties"]["depth"] 
-            if json["properties"]["type"] == "Газопровод"
+            if json["properties"]["type"] == "Трубопровод" and index % 2 == 0
             else json["properties"]["depth"]
         )
         geo_object_type = (
