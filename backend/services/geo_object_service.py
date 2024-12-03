@@ -1,6 +1,6 @@
 from sqlalchemy import desc
 from backend.database.models.geo_object import GeoObject, GeoObjectGeometry, GeoObjectProperty
-from backend.dto.geo_object import GeoObjectModel, GeometryModel, GlobalLayerModel, PropertyModel, StatusModel, UpdateGeoObjectModel
+from backend.dto.geo_object import GeoObjectModel, GeoObjectStatistics, GeometryModel, GlobalLayerModel, PropertyModel, StatusModel, UpdateGeoObjectModel
 from backend.errors.geo_object_errors import GeoObjectNotFound
 from backend.repositories.geo_object_repository import GeoObjectRepository
 from backend.services.base_service import BaseService
@@ -77,3 +77,14 @@ class GeoObjectService(BaseService):
         for object in objects:
             dump_objects.append(await self.get_object(user_id, object))
         return dump_objects
+    
+    async def get_statistic(self) -> GeoObjectStatistics:
+        return GeoObjectStatistics(
+            underground_count=await self.repository.get_undergroud_count(),
+            aboveground_count=await self.repository.get_aboveground_count(),
+            avg_depth_aboveground=await self.repository.get_avg_depth_aboveground(),
+            avg_depth_underground=await self.repository.get_avg_depth_underground(),
+            materials_count=await self.repository.get_materials_count(),
+            active_status_count=await self.repository.get_active_status_count(),
+            inactive_status_count=await self.repository.get_inactive_status_count(),
+        )

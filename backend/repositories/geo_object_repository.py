@@ -1,6 +1,6 @@
 from ast import Await
 from botocore import session
-from sqlalchemy import select, update
+from sqlalchemy import func, select, update
 from sqlalchemy.orm import joinedload
 from backend.database.models.geo_object import GeoObject, GeoObjectGeometry, GeoObjectProperty, GlobalLayer, GlobalLayerGeoObject
 from backend.database.models.user import UserGeoObject
@@ -118,3 +118,87 @@ class GeoObjectRepository(SqlAlchemyRepository):
             )
         ).scalars().all()
         return objects
+    
+    async def get_undergroud_count(self):
+        underground_count = (
+            await self.session.execute(
+                select(
+                    func.count(GeoObject.id)
+                ).where(
+                    GeoObjectProperty.depth < 0
+                )
+            )
+        ).scalar_one_or_none()
+        return underground_count
+    
+    async def get_aboveground_count(self):
+        aboveground_count = (
+            await self.session.execute(
+                select(
+                    func.count(GeoObject.id)
+                ).where(
+                    GeoObjectProperty.depth >= 0
+                )
+            )
+        ).scalar_one_or_none()
+        return aboveground_count
+    
+    async def get_avg_depth_aboveground(self):
+        avg_depth = (
+            await self.session.execute(
+                select(
+                    func.avg(GeoObjectProperty.depth)
+                ).where(
+                    GeoObjectProperty.depth >= 0
+                )
+            )
+        ).scalar_one_or_none()
+        return avg_depth
+    
+    async def get_avg_depth_underground(self):
+        avg_depth = (
+            await self.session.execute(
+                select(
+                    func.avg(GeoObjectProperty.depth)
+                ).where(
+                    GeoObjectProperty.depth < 0
+                )
+            )
+        ).scalar_one_or_none()
+        return avg_depth
+    
+    async def get_materials_count(self):
+        materials_count = (
+            await self.session.execute(
+                select(
+                    func.count(GeoObjectProperty.material)
+                ).where(
+                    GeoObjectProperty.material != None
+                )
+            ).scalars().all()
+        )
+        return materials_count
+    
+    async def get_active_status_count(self):
+        active_status_count = (
+            await self.session.execute(
+                select(
+                    func.count(GeoObjectProperty.status_id)
+                ).where(
+                    GeoObjectProperty.status_id == StatusTypes.ACTIVE
+                )
+            )
+        ).scalar_one_or_none()
+        return active_status_count
+    
+    async def get_inactive_status_count(self):
+        inactive_status_count = (
+            await self.session.execute(
+                select(
+                    func.count(GeoObjectProperty.status_id)
+                ).where(
+                    GeoObjectProperty.status_id == StatusTypes.INACTIVE
+                )
+            )
+        ).scalar_one_or_none()
+        return inactive_status_count
