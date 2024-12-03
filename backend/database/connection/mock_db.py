@@ -28,11 +28,18 @@ async def create_test_db(session: AsyncSession):
         'Теплосеть': 'https://storage.yandexcloud.net/mago-storage/KSP_018006_00008_1_t222_143538.jpg',
         'Кабель': 'https://storage.yandexcloud.net/mago-storage/755404694639425.jpg'
     }
+    layers = {
+        'Кабель': 'Связь',
+        'Трубопровод': 'Водоснабжение',
+        'Газопровод': 'Газоснабжение',
+        'Теплосеть': 'Теплоснабжение'
+    }
     with open(os.path.join(os.getcwd(), 'backend', 'database', 'connection', 'test_db.json'), 'r') as file:
         test_json = file.read()
         test_jsons = jsn.loads(test_json)
 
     for json in test_jsons:
+        json["global_layers"] = [layers[json["properties"]["type"]]]
         json["properties"]["depth"] = (
             ~json["properties"]["depth"] 
             if json["properties"]["type"] == "Газопровод"

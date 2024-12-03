@@ -18,7 +18,7 @@ class DatabaseConnection:
         return AsyncSession(bind=self._engine)
 
     async def __call__(self, reset=False):
-        if self.config.reset:
+        if self.config.reset or True:
             sync_url = f'postgresql://{self.config.db_user}:{self.config.db_pass}@{self.config.db_host}:{self.config.db_port}/{self.config.db_name}'
             sync_engine = create_engine(sync_url)
             self.drop_everything(sync_engine)

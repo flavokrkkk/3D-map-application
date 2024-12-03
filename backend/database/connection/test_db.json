@@ -1,308 +1,3333 @@
 [
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Активный",
-            "name": "Газопровод 1",
-            "type": "Газопровод",
-            "depth": 10,
-            "material": "Сталь"
+        {
+            "id": 1,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 1",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Основной участок 1"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.611347,
+                        55.761095
+                    ],
+                    [
+                        37.624081,
+                        55.763497
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6205, 55.7551],
-                [37.6209, 55.7555]
-            ]
+        {
+            "id": 2,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 2",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Основной участок 2"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.624081,
+                        55.763497
+                    ],
+                    [
+                        37.630018,
+                        55.760323
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Газоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Неактивный",
-            "name": "Кабель 1",
-            "type": "Кабель",
-            "depth": 5,
-            "material": "Медь"
+        {
+            "id": 3,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 3",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Основной участок 3"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.630018,
+                        55.760323
+                    ],
+                    [
+                        37.62896,
+                        55.749717
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6212, 55.7555],
-                [37.6216, 55.7559]
-            ]
+        {
+            "id": 4,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 4",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Основной участок 4"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62896,
+                        55.749717
+                    ],
+                    [
+                        37.615079,
+                        55.744801
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Связь"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Ожидающий",
-            "name": "Теплосеть 1",
-            "type": "Теплосеть",
-            "depth": 12,
-            "material": "Чугун"
+        {
+            "id": 5,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 5",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Основной участок 5"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.615079,
+                        55.744801
+                    ],
+                    [
+                        37.596413,
+                        55.743385
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6206, 55.7553],
-                [37.6211, 55.7557]
-            ]
+        {
+            "id": 6,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 6",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Основной участок 6"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.596413,
+                        55.743385
+                    ],
+                    [
+                        37.57943,
+                        55.749769
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Теплоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Активный",
-            "name": "Трубопровод 1",
-            "type": "Трубопровод",
-            "depth": 20,
-            "material": "Сталь"
+        {
+            "id": 7,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 7",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Основной участок 7"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57943,
+                        55.749769
+                    ],
+                    [
+                        37.569155,
+                        55.755485
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6198, 55.7550],
-                [37.6202, 55.7554]
-            ]
+        {
+            "id": 8,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 8",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Основной участок 8"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.569155,
+                        55.755485
+                    ],
+                    [
+                        37.579567,
+                        55.762448
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Водоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Активный",
-            "name": "Газопровод 2",
-            "type": "Газопровод",
-            "depth": 15,
-            "material": "Полиэтилен"
+        {
+            "id": 9,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 9",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Основной участок 9"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.579567,
+                        55.762448
+                    ],
+                    [
+                        37.589093,
+                        55.766982
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6204, 55.7551],
-                [37.6208, 55.7554]
-            ]
+        {
+            "id": 10,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 10",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Основной участок 10"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.589093,
+                        55.766982
+                    ],
+                    [
+                        37.604133,
+                        55.768587
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Газоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Ожидающий",
-            "name": "Кабель 2",
-            "type": "Кабель",
-            "depth": 7,
-            "material": "Алюминий"
+        {
+            "id": 11,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 11",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Основной участок 11"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.604133,
+                        55.768587
+                    ],
+                    [
+                        37.611347,
+                        55.761095
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6210, 55.7553],
-                [37.6214, 55.7557]
-            ]
+        {
+            "id": 12,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 12",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 12"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.60653899181332,
+                        55.76316636769006
+                    ],
+                    [
+                        37.619756630346096,
+                        55.76404662607598
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Связь"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Неактивный",
-            "name": "Теплосеть 2",
-            "type": "Теплосеть",
-            "depth": 10,
-            "material": "Чугун"
+        {
+            "id": 13,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 13",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 13"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.619756630346096,
+                        55.76404662607598
+                    ],
+                    [
+                        37.62911478984606,
+                        55.75724627151603
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6202, 55.7552],
-                [37.6207, 55.7556]
-            ]
+        {
+            "id": 14,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 14",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 14"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62911478984606,
+                        55.75724627151603
+                    ],
+                    [
+                        37.626118807024675,
+                        55.744900505654535
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Теплоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Активный",
-            "name": "Трубопровод 2",
-            "type": "Трубопровод",
-            "depth": 25,
-            "material": "Сталь"
+        {
+            "id": 15,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 15",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 15"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.626118807024675,
+                        55.744900505654535
+                    ],
+                    [
+                        37.612092542203506,
+                        55.739910991991344
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6199, 55.7550],
-                [37.6203, 55.7554]
-            ]
+        {
+            "id": 16,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 16",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 16"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.612092542203506,
+                        55.739910991991344
+                    ],
+                    [
+                        37.5949955548799,
+                        55.74722216470237
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Водоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Неактивный",
-            "name": "Газопровод 3",
-            "type": "Газопровод",
-            "depth": 9,
-            "material": "Полиэтилен"
+        {
+            "id": 17,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 17",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 17"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.5949955548799,
+                        55.74722216470237
+                    ],
+                    [
+                        37.57996664956677,
+                        55.74684188856535
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6205, 55.7552],
-                [37.6209, 55.7556]
-            ]
+        {
+            "id": 18,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 18",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 18"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57996664956677,
+                        55.74684188856535
+                    ],
+                    [
+                        37.56936780504896,
+                        55.75553490041141
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Газоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Ожидающий",
-            "name": "Кабель 3",
-            "type": "Кабель",
-            "depth": 6,
-            "material": "Алюминий"
+        {
+            "id": 19,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 19",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 19"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.56936780504896,
+                        55.75553490041141
+                    ],
+                    [
+                        37.57687316165652,
+                        55.76104080353074
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6211, 55.7554],
-                [37.6215, 55.7558]
-            ]
+        {
+            "id": 20,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 20",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 20"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57687316165652,
+                        55.76104080353074
+                    ],
+                    [
+                        37.58418667912026,
+                        55.77168440029928
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Связь"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Активный",
-            "name": "Теплосеть 3",
-            "type": "Теплосеть",
-            "depth": 8,
-            "material": "Чугун"
+        {
+            "id": 21,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 21",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 21"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58418667912026,
+                        55.77168440029928
+                    ],
+                    [
+                        37.60576503734493,
+                        55.766994788499765
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6206, 55.7553],
-                [37.6210, 55.7557]
-            ]
+        {
+            "id": 22,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 22",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 22"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.60576503734493,
+                        55.766994788499765
+                    ],
+                    [
+                        37.60867686210223,
+                        55.75679464836633
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Теплоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Активный",
-            "name": "Трубопровод 3",
-            "type": "Трубопровод",
-            "depth": 19,
-            "material": "Сталь"
+        {
+            "id": 23,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 23",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 23"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.608964324519974,
+                        55.76230374218037
+                    ],
+                    [
+                        37.62526621419854,
+                        55.76849389361884
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6197, 55.7552],
-                [37.6202, 55.7555]
-            ]
+        {
+            "id": 24,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 24",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Квартальный участок 24"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62526621419854,
+                        55.76849389361884
+                    ],
+                    [
+                        37.62741679530275,
+                        55.75660750883584
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Водоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Неактивный",
-            "name": "Газопровод 4",
-            "type": "Газопровод",
-            "depth": 14,
-            "material": "Полиэтилен"
+        {
+            "id": 25,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 25",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 25"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62741679530275,
+                        55.75660750883584
+                    ],
+                    [
+                        37.62464406691402,
+                        55.750997028778315
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6203, 55.7550],
-                [37.6208, 55.7554]
-            ]
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Активный",
+                    "name": "Газопровод 1",
+                    "type": "Газопровод",
+                    "depth": 10,
+                    "material": "Сталь"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6205, 55.7551],
+                        [37.6209, 55.7555]
+                    ]
+                },
+                "global_layers": ["Газоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Неактивный",
+                    "name": "Кабель 1",
+                    "type": "Кабель",
+                    "depth": 5,
+                    "material": "Медь"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6212, 55.7555],
+                        [37.6216, 55.7559]
+                    ]
+                },
+                "global_layers": ["Связь"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Ожидающий",
+                    "name": "Теплосеть 1",
+                    "type": "Теплосеть",
+                    "depth": 12,
+                    "material": "Чугун"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6206, 55.7553],
+                        [37.6211, 55.7557]
+                    ]
+                },
+                "global_layers": ["Теплоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Активный",
+                    "name": "Трубопровод 1",
+                    "type": "Трубопровод",
+                    "depth": 20,
+                    "material": "Сталь"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6198, 55.7550],
+                        [37.6202, 55.7554]
+                    ]
+                },
+                "global_layers": ["Водоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Активный",
+                    "name": "Газопровод 2",
+                    "type": "Газопровод",
+                    "depth": 15,
+                    "material": "Полиэтилен"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6204, 55.7551],
+                        [37.6208, 55.7554]
+                    ]
+                },
+                "global_layers": ["Газоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Ожидающий",
+                    "name": "Кабель 2",
+                    "type": "Кабель",
+                    "depth": 7,
+                    "material": "Алюминий"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6210, 55.7553],
+                        [37.6214, 55.7557]
+                    ]
+                },
+                "global_layers": ["Связь"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Неактивный",
+                    "name": "Теплосеть 2",
+                    "type": "Теплосеть",
+                    "depth": 10,
+                    "material": "Чугун"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6202, 55.7552],
+                        [37.6207, 55.7556]
+                    ]
+                },
+                "global_layers": ["Теплоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Активный",
+                    "name": "Трубопровод 2",
+                    "type": "Трубопровод",
+                    "depth": 25,
+                    "material": "Сталь"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6199, 55.7550],
+                        [37.6203, 55.7554]
+                    ]
+                },
+                "global_layers": ["Водоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Неактивный",
+                    "name": "Газопровод 3",
+                    "type": "Газопровод",
+                    "depth": 9,
+                    "material": "Полиэтилен"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6205, 55.7552],
+                        [37.6209, 55.7556]
+                    ]
+                },
+                "global_layers": ["Газоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Ожидающий",
+                    "name": "Кабель 3",
+                    "type": "Кабель",
+                    "depth": 6,
+                    "material": "Алюминий"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6211, 55.7554],
+                        [37.6215, 55.7558]
+                    ]
+                },
+                "global_layers": ["Связь"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Активный",
+                    "name": "Теплосеть 3",
+                    "type": "Теплосеть",
+                    "depth": 8,
+                    "material": "Чугун"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6206, 55.7553],
+                        [37.6210, 55.7557]
+                    ]
+                },
+                "global_layers": ["Теплоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Активный",
+                    "name": "Трубопровод 3",
+                    "type": "Трубопровод",
+                    "depth": 19,
+                    "material": "Сталь"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6197, 55.7552],
+                        [37.6202, 55.7555]
+                    ]
+                },
+                "global_layers": ["Водоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Неактивный",
+                    "name": "Газопровод 4",
+                    "type": "Газопровод",
+                    "depth": 14,
+                    "material": "Полиэтилен"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6203, 55.7550],
+                        [37.6208, 55.7554]
+                    ]
+                },
+                "global_layers": ["Газоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Ожидающий",
+                    "name": "Кабель 4",
+                    "type": "Кабель",
+                    "depth": 5,
+                    "material": "Медь"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6210, 55.7556],
+                        [37.6214, 55.7560]
+                    ]
+                },
+                "global_layers": ["Связь"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Активный",
+                    "name": "Теплосеть 4",
+                    "type": "Теплосеть",
+                    "depth": 12,
+                    "material": "Чугун"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6204, 55.7552],
+                        [37.6209, 55.7556]
+                    ]
+                },
+                "global_layers": ["Теплоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Активный",
+                    "name": "Трубопровод 4",
+                    "type": "Трубопровод",
+                    "depth": 16,
+                    "material": "Сталь"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6196, 55.7551],
+                        [37.6201, 55.7555]
+                    ]
+                },
+                "global_layers": ["Водоснабжение"]
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "status": "Неактивный",
+                    "name": "Газопровод 5",
+                    "type": "Газопровод",
+                    "depth": 11,
+                    "material": "Полиэтилен"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [37.6207, 55.7552],
+                        [37.6211, 55.7556]
+                    ]
+                },
+                "global_layers": ["Газоснабжение"]
+            },
+        {
+            "id": 26,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 26",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 26"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62464406691402,
+                        55.750997028778315
+                    ],
+                    [
+                        37.61968903224888,
+                        55.74038692846365
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Газоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Ожидающий",
-            "name": "Кабель 4",
-            "type": "Кабель",
-            "depth": 5,
-            "material": "Медь"
+        {
+            "id": 27,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 27",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 27"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.61968903224888,
+                        55.74038692846365
+                    ],
+                    [
+                        37.60084078068303,
+                        55.74356820727558
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6210, 55.7556],
-                [37.6214, 55.7560]
-            ]
+        {
+            "id": 28,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 28",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 28"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.60084078068303,
+                        55.74356820727558
+                    ],
+                    [
+                        37.57618121983178,
+                        55.75128779285999
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Связь"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Активный",
-            "name": "Теплосеть 4",
-            "type": "Теплосеть",
-            "depth": 12,
-            "material": "Чугун"
+        {
+            "id": 29,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 29",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 29"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57618121983178,
+                        55.75128779285999
+                    ],
+                    [
+                        37.570729375438646,
+                        55.75402043793007
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6204, 55.7552],
-                [37.6209, 55.7556]
-            ]
+        {
+            "id": 30,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 30",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Квартальный участок 30"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.570729375438646,
+                        55.75402043793007
+                    ],
+                    [
+                        37.57640651103429,
+                        55.76038857275868
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Теплоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Активный",
-            "name": "Трубопровод 4",
-            "type": "Трубопровод",
-            "depth": 16,
-            "material": "Сталь"
+        {
+            "id": 31,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 31",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 31"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57640651103429,
+                        55.76038857275868
+                    ],
+                    [
+                        37.587133416886324,
+                        55.76238103180255
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6196, 55.7551],
-                [37.6201, 55.7555]
-            ]
+        {
+            "id": 32,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 32",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 32"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.587133416886324,
+                        55.76238103180255
+                    ],
+                    [
+                        37.6046381652936,
+                        55.77165728525343
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Водоснабжение"]
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "status": "Неактивный",
-            "name": "Газопровод 5",
-            "type": "Газопровод",
-            "depth": 11,
-            "material": "Полиэтилен"
+        {
+            "id": 33,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 33",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 33"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.6046381652936,
+                        55.77165728525343
+                    ],
+                    [
+                        37.6123190609652,
+                        55.757915409045246
+                    ]
+                ]
+            }
         },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [37.6207, 55.7552],
-                [37.6211, 55.7556]
-            ]
+        {
+            "id": 34,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 34",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Квартальный участок 34"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.615941363540195,
+                        55.75692290210005
+                    ],
+                    [
+                        37.62466978981413,
+                        55.760736152380716
+                    ]
+                ]
+            }
         },
-        "global_layers": ["Газоснабжение"]
-    }
-]
+        {
+            "id": 35,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 35",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 35"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62466978981413,
+                        55.760736152380716
+                    ],
+                    [
+                        37.63026354536173,
+                        55.762181603045036
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 36,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 36",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 36"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.63026354536173,
+                        55.762181603045036
+                    ],
+                    [
+                        37.628501332628154,
+                        55.751929729280164
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 37,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 37",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 37"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.628501332628154,
+                        55.751929729280164
+                    ],
+                    [
+                        37.61269684923134,
+                        55.743566540833655
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 38,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 38",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 38"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.61269684923134,
+                        55.743566540833655
+                    ],
+                    [
+                        37.59279120422097,
+                        55.740557601803815
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 39,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 39",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 39"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.59279120422097,
+                        55.740557601803815
+                    ],
+                    [
+                        37.57697995802827,
+                        55.749101017084186
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 40,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 40",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 40"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57697995802827,
+                        55.749101017084186
+                    ],
+                    [
+                        37.56944997258539,
+                        55.759003746959394
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 41,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 41",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 41"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.56944997258539,
+                        55.759003746959394
+                    ],
+                    [
+                        37.583163413904366,
+                        55.76024714815197
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 42,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 42",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 42"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.583163413904366,
+                        55.76024714815197
+                    ],
+                    [
+                        37.591792710964896,
+                        55.77022881802042
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 43,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 43",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 43"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.591792710964896,
+                        55.77022881802042
+                    ],
+                    [
+                        37.601453969764314,
+                        55.77080708885951
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 44,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 44",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 44"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.601453969764314,
+                        55.77080708885951
+                    ],
+                    [
+                        37.61084943029623,
+                        55.760232656094026
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 45,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 45",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 45"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.609158528644066,
+                        55.75875414235178
+                    ],
+                    [
+                        37.62188384268197,
+                        55.758940988909075
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 46,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 46",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 46"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62188384268197,
+                        55.758940988909075
+                    ],
+                    [
+                        37.63480094888841,
+                        55.75845041860044
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 47,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 47",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 47"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.63480094888841,
+                        55.75845041860044
+                    ],
+                    [
+                        37.63148725928223,
+                        55.746969735565365
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 48,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 48",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 48"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.63148725928223,
+                        55.746969735565365
+                    ],
+                    [
+                        37.612952360448496,
+                        55.74887215167788
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 49,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 49",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 49"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.612952360448496,
+                        55.74887215167788
+                    ],
+                    [
+                        37.598040241306094,
+                        55.73991295332743
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 50,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 50",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 50"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.598040241306094,
+                        55.73991295332743
+                    ],
+                    [
+                        37.58187067510339,
+                        55.746219234935744
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 51,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 51",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 51"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58187067510339,
+                        55.746219234935744
+                    ],
+                    [
+                        37.56928002178572,
+                        55.75620511665954
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 52,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 52",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 52"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.56928002178572,
+                        55.75620511665954
+                    ],
+                    [
+                        37.58171490743118,
+                        55.765187996573395
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 53,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 53",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 53"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58171490743118,
+                        55.765187996573395
+                    ],
+                    [
+                        37.585480847250146,
+                        55.766211377545005
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 54,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 54",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 54"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.585480847250146,
+                        55.766211377545005
+                    ],
+                    [
+                        37.60903928518586,
+                        55.767619316380255
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 55,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 55",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 55"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.60903928518586,
+                        55.767619316380255
+                    ],
+                    [
+                        37.613703331837776,
+                        55.76499582614407
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 56,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 56",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 56"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.6147666187241,
+                        55.76167029986222
+                    ],
+                    [
+                        37.62860241694694,
+                        55.759316916367005
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 57,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 57",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 57"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62860241694694,
+                        55.759316916367005
+                    ],
+                    [
+                        37.631808121901216,
+                        55.7612674561951
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 58,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 58",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 58"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.631808121901216,
+                        55.7612674561951
+                    ],
+                    [
+                        37.63362548348649,
+                        55.75435577143439
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 59,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 59",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 59"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.63362548348649,
+                        55.75435577143439
+                    ],
+                    [
+                        37.61695806102265,
+                        55.74783578982901
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 60,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 60",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 60"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.61695806102265,
+                        55.74783578982901
+                    ],
+                    [
+                        37.5986033933873,
+                        55.74407727504665
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 61,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 61",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 61"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.5986033933873,
+                        55.74407727504665
+                    ],
+                    [
+                        37.57702280683037,
+                        55.747219460312465
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 62,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 62",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Квартальный участок 62"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57702280683037,
+                        55.747219460312465
+                    ],
+                    [
+                        37.56512527700548,
+                        55.75969089160897
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 63,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 63",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 63"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.56512527700548,
+                        55.75969089160897
+                    ],
+                    [
+                        37.580202749425695,
+                        55.76646115234896
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 64,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 64",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 64"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.580202749425695,
+                        55.76646115234896
+                    ],
+                    [
+                        37.58838170164106,
+                        55.765720426841675
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 65,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 65",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 65"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58838170164106,
+                        55.765720426841675
+                    ],
+                    [
+                        37.601437539568856,
+                        55.76841696608565
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 66,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 66",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 66"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.601437539568856,
+                        55.76841696608565
+                    ],
+                    [
+                        37.60889958370436,
+                        55.75967972082537
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 67,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 67",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 67"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.61616518019804,
+                        55.76524117687316
+                    ],
+                    [
+                        37.62448732308928,
+                        55.76340261473415
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 68,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 68",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 68"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62448732308928,
+                        55.76340261473415
+                    ],
+                    [
+                        37.62833580288702,
+                        55.755468175983275
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 69,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 69",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 69"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62833580288702,
+                        55.755468175983275
+                    ],
+                    [
+                        37.62631521295346,
+                        55.74973507003704
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 70,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 70",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 70"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62631521295346,
+                        55.74973507003704
+                    ],
+                    [
+                        37.6150074631936,
+                        55.74597930470751
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 71,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 71",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 71"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.6150074631936,
+                        55.74597930470751
+                    ],
+                    [
+                        37.593637188744644,
+                        55.74303025014903
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 72,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 72",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 72"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.593637188744644,
+                        55.74303025014903
+                    ],
+                    [
+                        37.57889129921519,
+                        55.753933968857865
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 73,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 73",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 73"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57889129921519,
+                        55.753933968857865
+                    ],
+                    [
+                        37.571903336437714,
+                        55.76005526783929
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 74,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 74",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 74"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.571903336437714,
+                        55.76005526783929
+                    ],
+                    [
+                        37.58156350535906,
+                        55.76234290467343
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 75,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 75",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 75"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58156350535906,
+                        55.76234290467343
+                    ],
+                    [
+                        37.58440022758866,
+                        55.76252475442968
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 76,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 76",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 76"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58440022758866,
+                        55.76252475442968
+                    ],
+                    [
+                        37.60895993858831,
+                        55.768141727186226
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 77,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 77",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 77"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.60895993858831,
+                        55.768141727186226
+                    ],
+                    [
+                        37.6092018504796,
+                        55.76575097600554
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 78,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 78",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Квартальный участок 78"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.615736405875566,
+                        55.7592900068956
+                    ],
+                    [
+                        37.622454700913046,
+                        55.76443252105158
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 79,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 79",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 79"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.622454700913046,
+                        55.76443252105158
+                    ],
+                    [
+                        37.63335728869958,
+                        55.761560757138334
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 80,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 80",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 80"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.63335728869958,
+                        55.761560757138334
+                    ],
+                    [
+                        37.63274509567125,
+                        55.74528211556085
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 81,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 81",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 81"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.63274509567125,
+                        55.74528211556085
+                    ],
+                    [
+                        37.619255447393485,
+                        55.747645573504734
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 82,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 82",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 82"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.619255447393485,
+                        55.747645573504734
+                    ],
+                    [
+                        37.596880654215056,
+                        55.74606508379074
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 83,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 83",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 83"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.596880654215056,
+                        55.74606508379074
+                    ],
+                    [
+                        37.58098363021949,
+                        55.747250262942835
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 84,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 84",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Квартальный участок 84"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58098363021949,
+                        55.747250262942835
+                    ],
+                    [
+                        37.57109828301538,
+                        55.75951454266424
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 85,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 85",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 85"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57109828301538,
+                        55.75951454266424
+                    ],
+                    [
+                        37.58373082944738,
+                        55.76437147740365
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 86,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 86",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 86"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58373082944738,
+                        55.76437147740365
+                    ],
+                    [
+                        37.58953405778394,
+                        55.76378082781592
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 87,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 87",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 87"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58953405778394,
+                        55.76378082781592
+                    ],
+                    [
+                        37.60212012141623,
+                        55.76489058935783
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 88,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 88",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 88"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.60212012141623,
+                        55.76489058935783
+                    ],
+                    [
+                        37.61181704791017,
+                        55.762426802162075
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 89,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 89",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 89"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.60677043094091,
+                        55.76511527176974
+                    ],
+                    [
+                        37.62452083970156,
+                        55.76710621240105
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 90,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 90",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 90"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62452083970156,
+                        55.76710621240105
+                    ],
+                    [
+                        37.62878873019631,
+                        55.76315575646831
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 91,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 91",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 91"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62878873019631,
+                        55.76315575646831
+                    ],
+                    [
+                        37.630746072021516,
+                        55.75138393037109
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 92,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 92",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 92"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.630746072021516,
+                        55.75138393037109
+                    ],
+                    [
+                        37.61173268343132,
+                        55.74907983229976
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 93,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 93",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 93"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.61173268343132,
+                        55.74907983229976
+                    ],
+                    [
+                        37.598157941989015,
+                        55.74196991712082
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 94,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 94",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Чугун",
+                "description": "Квартальный участок 94"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.598157941989015,
+                        55.74196991712082
+                    ],
+                    [
+                        37.57615530244246,
+                        55.75447958706147
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 95,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 95",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 95"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57615530244246,
+                        55.75447958706147
+                    ],
+                    [
+                        37.57133231522909,
+                        55.759696048049754
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 96,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 96",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Квартальный участок 96"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57133231522909,
+                        55.759696048049754
+                    ],
+                    [
+                        37.57555394936278,
+                        55.76335282687428
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 97,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 97",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 97"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57555394936278,
+                        55.76335282687428
+                    ],
+                    [
+                        37.59188885302849,
+                        55.768902769969436
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 98,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 98",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 98"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.59188885302849,
+                        55.768902769969436
+                    ],
+                    [
+                        37.600943409888764,
+                        55.771797855990435
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 99,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 99",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 99"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.600943409888764,
+                        55.771797855990435
+                    ],
+                    [
+                        37.60769916010803,
+                        55.7584308705241
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 100,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 100",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 100"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.61486950769029,
+                        55.75836217806435
+                    ],
+                    [
+                        37.627200302635295,
+                        55.76222614350308
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 101,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 101",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 101"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.627200302635295,
+                        55.76222614350308
+                    ],
+                    [
+                        37.62517313060254,
+                        55.76145893182605
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 102,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 102",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 102"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62517313060254,
+                        55.76145893182605
+                    ],
+                    [
+                        37.62669659008577,
+                        55.74727418549033
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 103,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 103",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 103"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62669659008577,
+                        55.74727418549033
+                    ],
+                    [
+                        37.6130219879109,
+                        55.74251776047162
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 104,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 104",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 104"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.6130219879109,
+                        55.74251776047162
+                    ],
+                    [
+                        37.59814903808031,
+                        55.746880554676665
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 105,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 105",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 105"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.59814903808031,
+                        55.746880554676665
+                    ],
+                    [
+                        37.58070741712149,
+                        55.74486110835131
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 106,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 106",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 106"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58070741712149,
+                        55.74486110835131
+                    ],
+                    [
+                        37.5719314291221,
+                        55.75324452754104
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 107,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 107",
+                "type": "Трубопровод",
+                "depth": 10,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 107"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.5719314291221,
+                        55.75324452754104
+                    ],
+                    [
+                        37.58307704101843,
+                        55.76523579690289
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 108,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 108",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 108"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.58307704101843,
+                        55.76523579690289
+                    ],
+                    [
+                        37.59391336771995,
+                        55.76307387089861
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 109,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 109",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 109"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.59391336771995,
+                        55.76307387089861
+                    ],
+                    [
+                        37.608366707246795,
+                        55.76635126896619
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 110,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 110",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 110"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.608366707246795,
+                        55.76635126896619
+                    ],
+                    [
+                        37.60925515709478,
+                        55.76124994082479
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 111,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 111",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 111"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.614852433145046,
+                        55.756405260987194
+                    ],
+                    [
+                        37.62672525952378,
+                        55.76588133945347
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 112,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 112",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Медь",
+                "description": "Квартальный участок 112"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62672525952378,
+                        55.76588133945347
+                    ],
+                    [
+                        37.62680712180463,
+                        55.758356606401726
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 113,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 113",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 113"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.62680712180463,
+                        55.758356606401726
+                    ],
+                    [
+                        37.631921975445614,
+                        55.752940365100514
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 114,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 114",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 114"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.631921975445614,
+                        55.752940365100514
+                    ],
+                    [
+                        37.61441436478527,
+                        55.74873933120428
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 115,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 115",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Медь",
+                "description": "Квартальный участок 115"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.61441436478527,
+                        55.74873933120428
+                    ],
+                    [
+                        37.59974239035123,
+                        55.74396715880079
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 116,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 116",
+                "type": "Трубопровод",
+                "depth": 15,
+                "status": "Активный",
+                "material": "Пластик",
+                "description": "Квартальный участок 116"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.59974239035123,
+                        55.74396715880079
+                    ],
+                    [
+                        37.5809952957312,
+                        55.75162629554898
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 117,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 117",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 117"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.5809952957312,
+                        55.75162629554898
+                    ],
+                    [
+                        37.56684862756423,
+                        55.752239088599126
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 118,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 118",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Чугун",
+                "description": "Квартальный участок 118"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.56684862756423,
+                        55.752239088599126
+                    ],
+                    [
+                        37.57862699101834,
+                        55.75847269484153
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 119,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 119",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Активный",
+                "material": "Сталь",
+                "description": "Квартальный участок 119"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.57862699101834,
+                        55.75847269484153
+                    ],
+                    [
+                        37.59003640799804,
+                        55.76554350723316
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 120,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 120",
+                "type": "Трубопровод",
+                "depth": 20,
+                "status": "Ожидающий",
+                "material": "Сталь",
+                "description": "Квартальный участок 120"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.59003640799804,
+                        55.76554350723316
+                    ],
+                    [
+                        37.60779169580267,
+                        55.76791891193563
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 121,
+            "type": "Feature",
+            "properties": {
+                "name": "Труба 121",
+                "type": "Трубопровод",
+                "depth": 25,
+                "status": "Ожидающий",
+                "material": "Пластик",
+                "description": "Квартальный участок 121"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        37.60779169580267,
+                        55.76791891193563
+                    ],
+                    [
+                        37.61548961294926,
+                        55.7565608724228
+                    ]
+                ]
+            }
+        }
+    ]
